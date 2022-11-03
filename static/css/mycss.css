@@ -1,0 +1,230 @@
+h3{
+    font-weight:normal;
+    font-size:20px;
+}
+h2{
+    font-weight:normal;
+    text-align:center;
+}
+header{
+    font-size:30px;
+    text-align:left;
+    background:#50C878;
+}
+footer{
+    font-size:medium;
+    text-align:center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+img{
+    height:420px;
+    width:390px;
+}
+.meaning{
+    float:left;
+    margin-right:8px;
+    color:grey;
+}
+.meaning1{
+    font-weight:normal;
+}
+.synonym{
+    float:left;
+    margin-right:8px;
+    color:grey;
+}
+.antonym{
+    float:left;
+    margin-right:8px;
+    color:grey;
+}
+h4{
+    font-weight:smooth;
+}
+a{
+    color:#9F2B68;
+    text-decoration:none;
+}
+a:hover {
+    color:#9F2B68;
+}
+.anchor{
+    font-size:28px;
+    color:#0096FF;
+}
+.anchor:hover{
+    color:#0096FF;
+}
+i{
+    font-size:30px;
+    color:#0096FF;
+}
+input[type="search"]{
+    width:1100px;
+}
+
+/*Responsiveness*/
+
+
+/*for smartphones*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+    header{
+        font-size:22px;
+    }
+    h3{
+        font-size:17px;
+    }
+    img{
+        height:300px;
+        width:300px;
+    }
+    .meaning{
+        margin-right:5px;
+        font-size:20px;
+    }
+    .synonym{
+        margin-right:5px;
+        font-size:20px;
+    }
+    .antonym{
+        margin-right:5px;
+        font-size:20px;
+    }
+    .meaning1{
+        font-size:20px;
+    }
+    h4{
+        font-size:20px;
+    }
+    .anchor{
+        font-size:25px;
+    }
+    i{
+        font-size:26px;
+    }
+    input[type="search"]{
+        width:170px;
+    }
+}
+
+
+/*for ipad devices*/
+@media only screen and (min-device-width : 700px) and (max-device-width : 950px) {
+    html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+    header{
+        font-size:40px;
+    }
+    footer{
+        font-size:30px;
+    }
+    h2{
+        font-size:40px;
+    }
+    h3{
+        font-size:30px;
+    }
+    img{
+        height:550px;
+        width:550px;
+    }
+    .meaning{
+        margin-right:10px;
+        font-size:28px;
+    }
+    .synonym{
+        margin-right:10px;
+        font-size:28px;
+    }
+    .antonym{
+        margin-right:10px;
+        font-size:28px;
+    }
+    .meaning1{
+        font-size:28px;
+    }
+    h4{
+        font-size:28px;
+    }
+    .anchor{
+        font-size:40px;
+    }
+    i{
+        font-size:40px;
+    }
+    input[type="search"]{
+        width:800px;
+    }
+}
+
+
+/*for galaxy fold*/
+@media only screen and (min-device-width : 200px) and (max-device-width : 300px){
+    html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+    header{
+        font-size:16px;
+    }
+    footer{
+        font-size:12px;
+    }
+    h2{
+        font-size:17px;
+    }
+    h3{
+        font-size:18px;
+    }
+    img{
+        height:200px;
+        width:200px;
+    }
+    .meaning{
+        margin-right:5px;
+        font-size:15px;
+    }
+    .synonym{
+        margin-right:5px;
+        font-size:15px;
+    }
+    .antonym{
+        margin-right:5px;
+        font-size:15px;
+    }
+    .meaning1{
+        font-size:15px;
+    }
+    h4{
+        font-size:15px;
+    }
+    .anchor{
+        font-size:20px;
+    }
+    i{
+        font-size:23px;
+    }
+    input[type="search"]{
+        width:100px;
+    }
+
+}
+

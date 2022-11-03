@@ -11,43 +11,45 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--FontAwesome JS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mycss.css">
 </head>
 <body>
     <header class="myheader text-light py-3"> <strong class="ms-5"> Welcome to my Dictionary, </strong>
         here you can get meaning, synonyms and antonyms of any word you wish
     </header>
-    <div class="container py-5">
-        <h2 style="font-weight:normal;" align="center"> The word you entered is {{ results.word}} </h2> <!--to display the word in Uppercase-->
+    <div class="container py-4">
+        <h2> The word you entered is {{ results.word}} </h2> <!--to display the word in Uppercase-->
 <br>
 <hr>
 <p class="para-1 py-2">
-    <h5 class="ms-3" style="float:left;margin-right:8px;color:grey;">Meaning: </h5>
-    <h5 style="font-weight:normal;"> {{results.meaning}} </h5>
+    <h4 class="meaning ms-3">Meaning: </h4>
+    <h4 class="meaning1"> {{results.meaning}} </h4>
 </p>  
 <br>
+<br>
 <p>
-    <h5 class="ms-3" style="float:left;margin-right:8px;color:grey;">Synonyms:
-    {% for s in se %}
-    <a style="color:#9F2B68;text-decoration:none;" href="/word?word={{s}}">{{s}}</a>,
+    <h4 class="synonym ms-3">Synonyms: </h4>
+    <h4>{% for s in se %}
+    <a href="/word?word={{s}}">{{s}}</a>,
     {% endfor %}
-</h5>
+</h4>
 </p>
 <br>  
-<p class="py-4">
-    <h5 class="ms-3" style="float:left;margin-right:8px;color:grey;">Antonyms: 
-    {% for a in ae %}
-    <a style="color:#9F2B68;text-decoration:none;" href="/word?word={{a}}">{{a}}</a>,
+<br>
+<p class="py-0">
+    <h4 class="antonym ms-3">Antonyms: </h4>
+    <h4>{% for a in ae %}
+    <a href="/word?word={{a}}">{{a}}</a>,
     {% endfor %}
-    </h5>
+    </h4>
 </p>
-<br> <br> <br> <br>
+<br>
 <hr>
 </div>
-<div align="center" class="font py-0">
-    <a class="nav-link" href='/' style="font-size:28px;color:#0096FF;"><i class="fa-solid fa-house py-0" style="font-size:30px;color:#0096FF;"></i> Back to Homepage </a>
+<div align="center" class="mb-5">
+    <a class="anchor" href='/'><i class="fa-solid fa-house py-0"></i> Back to Homepage </a>
 </div>
-<footer class="bg-secondary text-light py-1 fixed-bottom"> Copyright
+<footer class="bg-secondary text-light py-1"> Copyright
     &#169
     2022 | All
     rights reserved </footer>

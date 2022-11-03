@@ -12,25 +12,24 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--FontAwesome JS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mycss.css">
 </head>
-
 <body>
-    <header class="myheader text-light py-3"> <strong class="ms-5"> Welcome to my Dictionary, </strong>
+    <header class="text-light py-3"> <strong class="ms-5"> Welcome to my Dictionary, </strong>
         here you can get meaning, synonyms and antonyms of any word you wish
     </header>
-    <div class="container text-center py-5">
-        <div class="intro" style="font-size:20px;">Search Your Word Below</div>
+    <div class="container text-center py-4">
+        <h3>Search Your Word Below</h3>
         <form class="d-flex pt-4" role="search" action="word">
             <input class="form-control ms-5 me-3" name="word" type="search" placeholder="Enter your word" aria-label="Search">
             <button class="btn btn-danger me-5" type="submit">Search</button>
         </form>
     </div>
-{% block body %}
-{% endblock body %}
-            <img src="{% static 'pic 41.jpg' %}" height="380" width="380" class="center">
-
-    <footer class="bg-secondary text-light py-1 fixed-bottom"> Copyright
+    <br>
+    <div align="center">
+            <img src="{% static 'pic 41.jpg' %}">
+    </div>
+    <footer class="bg-secondary text-light py-1"> Copyright
         &#169
         2022 | All
         rights reserved </footer>
