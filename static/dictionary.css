@@ -79,7 +79,7 @@ input[type="search"]{
         overflow-x:hidden;
     }
     header{
-        font-size:22px;
+        font-size:20px;
     }
     h3{
         font-size:17px;
@@ -174,7 +174,7 @@ input[type="search"]{
 
 
 /*for galaxy fold*/
-@media only screen and (min-device-width : 200px) and (max-device-width : 300px){
+@media only screen and (min-device-width : 200px) and (max-device-width : 319px){
     html,body{
         width:100%;
         height:100%;
