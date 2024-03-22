@@ -14,21 +14,21 @@ def search(request):
     res2= requests.get('https://www.thesaurus.com/browse/'+word)
     if res:
         soup=bs4.BeautifulSoup(res.text, 'lxml')
-        meaning=soup.find_all('div', {'value': '1'})
+        meaning=soup.find_all('div', {'class': 'ESah86zaufmd2_YPdZtq'})
         meaning1=meaning[0].getText()
     else:
-        word = 'Sorry, '+ word + ' is not found in the database'
+        word = 'not found in the database'
         meaning = ''
         meaning1 = ''
     if res2:
         soup2=bs4.BeautifulSoup(res2.text, 'lxml')
-        synonyms=soup2.find_all('a', {'class':'css-1kg1yv8 eh475bn0'})
+        synonyms=soup2.find_all('a', {'class':'KmScG4NplKj_3H5E3oA_'})
         ss=[]
         for b in synonyms[0:20]:
             re=b.text.strip()
             ss.append(re)
         se=ss
-        antonyms=soup2.find_all('a', {'class':'css-15bafsg eh475bn0'})
+        antonyms = soup2.find_all('a', {'class':'kJDOl0PkCieROgWADccb'})
         aa=[]
         for c in antonyms[0:20]:
             r=c.text.strip()
