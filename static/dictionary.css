@@ -87,6 +87,7 @@ input[type="search"]{
     }
     .head{
         padding-left: 20px;
+        padding-right: 10px;
     }
     h3{
         font-size:17px;
