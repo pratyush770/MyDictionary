@@ -28,7 +28,7 @@ def search(request):
             re=b.text.strip()
             ss.append(re)
         se=ss
-        antonyms = soup2.find_all('a', {'class':'CPTwwN0qNO__USQgCKp8 wBXvVlI83HMyXkhpf9FQ'})
+        antonyms = soup2.find_all('a', {'class':['CPTwwN0qNO__USQgCKp8','wBXvVlI83HMyXkhpf9FQ']})
         aa=[]
         for c in antonyms[0:20]:
             r=c.text.strip()
