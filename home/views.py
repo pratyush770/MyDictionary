@@ -14,7 +14,7 @@ def search(request):
     res2= requests.get('https://www.thesaurus.com/browse/'+word)
     if res:
         soup=bs4.BeautifulSoup(res.text, 'lxml')
-        meaning=soup.find_all('div', {'class': 'uZkQFNevBX05THVv1Mmb'})
+        meaning=soup.find_all('div', {'class': 'NZKOFkdkcvYgD3lqOIJw'})
         meaning1=meaning[0].getText()
     else:
         word = 'not found in the database'
